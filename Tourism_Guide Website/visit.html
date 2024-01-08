@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style02.css">
+</head>
+
+<body>
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index02.html" class="active">Home</a>
+            <div id="myLinks">
+                <a href="article.html">Article</a>
+                <a href="visit.html">Visit Places</a>
+                <a href="about02.html">About</a>
+                <a href="song.html">Song</a>
+                <a href="motivation.html">Motivational Quotes</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div style="padding-left:15px">
+            <h1>Visited Places</h1>
+
+            <!-- first slide -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="panjab/AMRITSAR.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="panjab/BHATINDA.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="panjab/CHANDIGARH.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"> 4/ 8</div>
+                    <img src="panjab/PATHANKOT.jpg" style="width:100%">
+                    <div class="text">Caption Four</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"> 5/ 8</div>
+                    <img src="panjab/PUNJAB.jpg" style="width:100%">
+                    <div class="text">Caption Five</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"> 6/ 8</div>
+                    <img src="panjab/PATIALA.jpg" style="width:100%">
+                    <div class="text">Caption Six</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"> 7/ 8</div>
+                    <img src="panjab/state_673.jpg" style="width:100%">
+                    <div class="text">Caption Seven</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="panjab/state_675.jpg" style="width:100%">
+                    <div class="text">Caption Eight</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div><br>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+
+
+            <p style="text-align: center; font-size: larger;">"The Incredible State of India"</p>
+            <h2 style="text-align: center;">Rajasthan, India</h2>
+            <p style="font-size: 25px; text-align: center;">
+                The Indian state of Rajasthan is popularly known to many as the Land of the Kings, is a beautiful
+                example of India?s age-old opulence and grandeur, traces of which still linger in the air of this state.
+                One of the most colourful and vibrant states in the country, with a strong blend of culture, history,
+                music, cuisine falling in love with Rajasthan doesn't take much time. Rajasthan has more history than
+                the entire country put together- it is the realm of erstwhile Maharajas and their lavish palaces and
+                majestic forts. Golden-sand deserts, traditional handicrafts, authentic cuisine and awe-inspiring
+                palaces all contribute to making Rajasthan an ideal vacation spot. Don't forget to wish everyone with
+                "Khamma Ghani" while you're here!
+
+                Rajasthan abounds in forts which offer sweeping views of the panoramic landscape. Three most essential
+                forts in Rajasthan are the Amber Fort in Jaipur, Mehrangarh Fort in Jodhpur and Jaisalmer Fort, commonly
+                known as Sonar Quila.
+
+                Rajasthan also has a significant number of palaces that are of historical significance, the famous ones
+                being the Umaid Bhawan Palace and the Jaipur City Palace. Both of these palaces date back to the high
+                times, and you can see the furniture and other objects used by the royal families on view in these
+                palaces.</p>
+
+            <!-- second slide -->
+
+            <div class="slideshow-container01">
+
+                <div class="mySlides01 fade">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="udaipur/110_20190710185439.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides01 fade">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="udaipur/1280px-Udaipur_Lake_India_20190708101104.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides01 fade">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="udaipur/3140.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides01 fade">
+                    <div class="numbertext"> 4/ 8</div>
+                    <img src="udaipur/51_20190710185640.jpg" style="width:100%">
+                    <div class="text">Caption four</div>
+                </div>
+                <div class="mySlides01 fade">
+                    <div class="numbertext"> 5/ 8</div>
+                    <img src="udaipur/shutterstock_1045418677_20190715095335.jpg" style="width:100%">
+                    <div class="text">Caption five</div>
+                </div>
+                <div class="mySlides01 fade">
+                    <div class="numbertext"> 6/ 8</div>
+                    <img src="udaipur/shutterstock_536597029_20190715095333.jpg" style="width:100%">
+                    <div class="text">Caption six</div>
+                </div>
+                <div class="mySlides01 fade">
+                    <div class="numbertext"> 7/ 8</div>
+                    <img src="udaipur/shutterstock_626260952_20190715095331.jpg" style="width:100%">
+                    <div class="text">Caption seven</div>
+                </div>
+                <div class="mySlides01 fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="udaipur/UDAIPUR.jpg" style="width:100%">
+                    <div class="text">Caption eight</div>
+                </div>
+
+                <a class="prev" onclick="plusSlide01(-1)">❮</a>
+                <a class="next" onclick="plusSlide01(1)">❯</a>
+
+            </div>
+            <div style="text-align:center">
+                <span class="dot1" onclick="currentSlide01(1)"></span>
+                <span class="dot1" onclick="currentSlide01(2)"></span>
+                <span class="dot1" onclick="currentSlide01(3)"></span>
+                <span class="dot1" onclick="currentSlide01(4)"></span>
+                <span class="dot1" onclick="currentSlide01(5)"></span>
+                <span class="dot1" onclick="currentSlide01(6)"></span>
+                <span class="dot1" onclick="currentSlide01(7)"></span>
+                <span class="dot1" onclick="currentSlide01(8)"></span>
+            </div><br>
+
+
+            <script>
+                let slideIndex01 = 1;
+                showSlides01(slideIndex01);
+
+                function plusSlide01(n) {
+                    showSlides01(slideIndex01 += n);
+                }
+
+                function currentSlide01(n) {
+                    showSlides01(slideIndex01 = n);
+                }
+
+                function showSlides01(n) {
+                    let j;
+                    let slides01 = document.getElementsByClassName("mySlides01");
+                    let dots = document.getElementsByClassName("dot1");
+                    if (n > slides01.length) { slideIndex01 = 1 }
+                    if (n < 1) { slideIndex01 = slides01.length }
+                    for (j = 0; j < slides01.length; j++) {
+                        slides01[j].style.display = "none";
+                    }
+                    for (j = 0; j < dots.length; j++) {
+                        dots[j].className = dots[j].className.replace(" active", "");
+                    }
+                    slides01[slideIndex01 - 1].style.display = "block";
+                    dots[slideIndex01 - 1].className += " active";
+                }
+            </script>
+
+
+            <!-- third slide -->
+
+            <div class="slideshow-container02">
+
+                <div class="mySlides02 fade">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="up/AGRA.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides02 fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="up/ALLAHABAD.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides02 fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="up/AYODHYA.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides02 fade">
+                    <div class="numbertext"> 4/ 7</div>
+                    <img src="up/HASTINAPUR.jpg" style="width:100%">
+                    <div class="text">Caption four</div>
+                </div>
+                <div class="mySlides02 fade">
+                    <div class="numbertext"> 5/ 7</div>
+                    <img src="up/CHITRAKOOT.jpg" style="width:100%">
+                    <div class="text">Caption five</div>
+                </div>
+                <div class="mySlides02 fade">
+                    <div class="numbertext"> 6/ 7</div>
+                    <img src="up/DUDHWA-NATIONAL-PARK.jpg" style="width:100%">
+                    <div class="text">Caption six</div>
+                </div>
+                <div class="mySlides02 fade">
+                    <div class="numbertext"> 7/ 7</div>
+                    <img src="up/LUCKNOW.jpg" style="width:100%">
+                    <div class="text">Caption seven</div>
+
+
+                </div>
+                <a class="prev" onclick="plusSlide02(-1)">❮</a>
+                <a class="next" onclick="plusSlide02(1)">❯</a>
+
+            </div>
+            <div style="text-align:center">
+                <span class="dot2" onclick="currentSlide02(1)"></span>
+                <span class="dot2" onclick="currentSlide02(3)"></span>
+                <span class="dot2" onclick="currentSlide02(2)"></span>
+                <span class="dot2" onclick="currentSlide02(4)"></span>
+                <span class="dot2" onclick="currentSlide02(5)"></span>
+                <span class="dot2" onclick="currentSlide02(6)"></span>
+                <span class="dot2" onclick="currentSlide02(7)"></span>
+                
+            </div><br>
+
+
+            <script>
+                let slideIndex02 = 1;
+                showSlides02(slideIndex02);
+
+                function plusSlide02(n) {
+                    showSlides02(slideIndex02 += n);
+                }
+
+                function currentSlide02(n) {
+                    showSlides02(slideIndex02 = n);
+                }
+
+                function showSlides02(n) {
+                    let k;
+                    let slides02 = document.getElementsByClassName("mySlides02");
+                    let dots = document.getElementsByClassName("dot2");
+                    if (n > slides02.length) { slideIndex02 = 1 }
+                    if (n < 1) { slideIndex02 = slides02.length }
+                    for (k = 0; k < slides02.length; k++) {
+                        slides02[k].style.display = "none";
+                    }
+                    for (k = 0; k < dots.length; k++) {
+                        dots[k].className = dots[k].className.replace(" active", "");
+                    }
+                    slides02[slideIndex02 - 1].style.display = "block";
+                    dots[slideIndex02 - 1].className += " active";
+                }
+            </script>
+
+
+            <!-- forth slide -->
+            <div class="slideshow-container03">
+
+                <div class="mySlides03 fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="hariyana/FARIDABAD.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides03 fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="hariyana/HARYANA.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides03 fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="hariyana/KURUKSHETRA.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides03 fade">
+                    <div class="numbertext"> 4/ 4</div>
+                    <img src="hariyana/PANCHKULA.jpg" style="width:100%">
+                    <div class="text">Caption four</div>
+                </div>
+
+            
+            <a class="prev" onclick="plusSlide03(-1)">❮</a>
+            <a class="next" onclick="plusSlide03(1)">❯</a>
+
+        </div>
+        <div style="text-align:center">
+            <span class="dot3" onclick="currentSlide03(1)"></span>
+            <span class="dot3" onclick="currentSlide03(3)"></span>
+            <span class="dot3" onclick="currentSlide03(2)"></span>
+            <span class="dot3" onclick="currentSlide03(4)"></span>
+            
+        </div><br>
+
+        <script>
+            let slideIndex03 = 1
+            showSlides03(slideIndex03);
+
+            function plusSlide03(n) {
+                showSlides03(slideIndex03 += n);
+            }
+
+            function currentSlide03(n) {
+                showSlides03(slideIndex03 = n);
+            }
+
+            function showSlides03(n) {
+                let l;
+                let slides03 = document.getElementsByClassName("mySlides03");
+                let dots = document.getElementsByClassName("dot3");
+                if (n > slides03.length) { slideIndex03 = 1 }
+                if (n < 1) { slideIndex03 = slides03.length }
+                for (l = 0; l < slides03.length; l++) {
+                    slides03[l].style.display = "none";
+                }
+                for (l = 0; l < dots.length; l++) {
+                    dots[l].className = dots[l].className.replace(" active", "");
+                }
+                slides03[slideIndex03 - 1].style.display = "block";
+                dots[slideIndex03 - 1].className += " active";
+            }
+        </script>
+
+
+
+
+
+
+        <div id="bottomnextup">
+            <a class="nexta" href="about02.html">next →</a>
+            <a class="preva" href="article.html">← prev</a>
+        </div>
+    </div><br>
+
+
+
+    <div class="footer_sec">
+
+
+
+        <p style="text-align: center; font-size: 28px;">footer section:</p>
+
+        <h2><img src="independence-day-india-flag.gif" alt=""> Kumar Angad</h2>
+
+        <footer>
+            <p><a href="<kumarangad91289@gmail.com>">kumarangad91289@gmail.com</a></p>
+            <br>
+            <p style="color:black ;">© Copyright 2011-2021 www.journey_of_Ak.com. All rights reserved. Developed by
+                <b style="color: red;">Angad Kumar</b>
+            </p>
+        </footer>
+    </div>
+
+    </div>
+    <button onclick="topFunction()" id="myBtn" style="display: block;">⇧ SCROLL TO TOP</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

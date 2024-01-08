@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style02.css">
+</head>
+
+<body>
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index02.html" class="active">Home</a>
+            <div id="myLinks">
+                <a href="article.html">Article</a>
+                <a href="visit.html">Visit Places</a>
+                <a href="about02.html">About</a>
+                <a href="song.html">Song</a>
+                <a href="motivation.html">Motivational Quotes</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div style="padding-left:15px">
+            <h1>About Us</h1>
+            <h2 style="text-align:center ; font-size:30px;">Our info:</h2>
+
+            <pre style="font-size:15px; ">
+                    Street:  Near Sarabhai Soc, Gotri Road,
+                             Near T.b.hospital, Gotri Road
+                    City:   Vadodara
+                    State/province/area: Gujarat
+                    Phone number  2341915
+                    Zip code  390021
+                    Country calling code  +91
+                    Country  India</pre>
+            <h4>Web Information</h4>
+            <p style="text-align: center;">
+                C---------//-----------> <br>
+                C----------//---------->
+            <h2>A Brief History</h2>
+            Born and raised in Bangkok, Thailand, I was fortunate enough to be able to study English extensively when I
+            was young and got myself into a Computer Science program at a university in Bangkok.
+
+            Like most Thais, I got a job immediately after university and started working as a web developer and trying
+            to climb the usual corporate ladder like everyone else. Back then, I had never dreamt of having a traveling
+            lifestyle because we do not have the traveling culture as they do in the west and it seems almost impossible
+            then as I was earning around 600 USD per month.
+
+            With that kind of salary, you would think that the work would be easy but on a contrary, it was extremely
+            demanding and stressful due to the nature of my position as a Client Technical Service and I was dealing
+            with big UK-based clients who demanded nothing but perfection.
+
+
+
+
+
+            <div id="bottomnextup">
+                <a class="nexta" href="song.html">next →</a>
+                <a class="preva" href="visit.html">← prev</a>
+            </div>
+            </p>
+        </div>
+
+        <div class="footer_sec">
+
+
+            <p style="text-align: center; font-size: 28px;">footer section:</p>
+
+            <h2><img src="independence-day-india-flag.gif" alt=""> Kumar Angad</h2>
+
+            <footer>
+                <p><a href="<kumarangad91289@gmail.com>">kumarangad91289@gmail.com</a></p>
+                <br>
+                <p style="color:black ;">© Copyright 2011-2021 www.journey_of_Ak.com. All rights reserved. Developed by
+                    <b style="color: red;">Angad Kumar</b></p>
+            </footer>
+        </div>
+
+    </div>
+    <button onclick="topFunction()" id="myBtn" style="display: block;">⇧ SCROLL TO TOP</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
